@@ -1,13 +1,14 @@
 # Rev-Tech
 
+
 Project 3 - E-Commerce Store (Team Project)
 
 ## Table of Contents
 
 * [Project Description](#project-description)
 * [Technologies Used](#technologies-used)
-* [Project Requirements](#project-requirements)
-* [Features](#features)
+* [Project Requirements](#sprint-1-requirements)
+* [Features](#legacy-features)
 * [Getting Started](#getting-started)
 * [Application Screenshots](#application-screenshots)
 * [Entity Relationship Diagram](#entity-relationship-diagram)
@@ -15,30 +16,35 @@ Project 3 - E-Commerce Store (Team Project)
 * [Team Structure](#team-structure)
 * [Contributors](#contributors)
 
-## Project Description
+## Project Description (Edit to add new functionality)
 The Revtech E-Commerce Application is an Angular Single Page Application (SPA) that will allow users to sign up and login as a customer, browse all available products, view an individual product, and add products to their carts for purchase. Any user can browse the database of products, however, in order to purchase one you must be logged into an account. A new account can be created using the sign-up button. After an account is created the user will be able to login and purchase the products(s) of their choice. With our products route, the user is able to view all of the products we have in our database on a single page. When the user clicks on a product that they are interested in, it will redirect them to that product’s specific page to see additional details. Here, the user will be able to see the title, cost, discount and description of the product. This page will also include a button that will add the product to their cart if they would like to purchase it. The cart is the user’s final destination and where they will be able to see the products they wish to purchase, review the total costs of selected products, and also be able to check the products out to complete their purchase.
 
-## Technologies Used
+## Technologies Used (Review for any new technologies)
 * Java (Programming Language) - version 11.0.12
 * TypeScript (Programming Language)
 * HTML (HyperText Markup Language)
-* CSS / SCSS (Cascading Style Sheets)
+* CSS / SCSS (Cascading Style Sheets) plus Angular Material
 * Eclipse (IDE)
+* Sonarlint (Code Refactorization) 
 * Apache Maven (Project Management)
 * H2 (Database)
+* PostgreSQL (Database)
 * Amazon Web Services - Elastic Cloud Computing (AWS EC2)
 * Amazon Web Services - Simple Storage Service (AWS S3)
+* Amazon Web Services - CodePipeline
 * Jenkins (Automation Server)
+* Docker (Image Containerization)
 * Hibernate ORM (Object Relational-Mapping Tool)
-* Spring Framework (Spring Boot, Spring Data, Spring Web, Spring AOP)
+* Spring Framework (Spring Boot, Spring Data, Spring Web, Spring AOP, Spring Mail, Spring Jasypt)
 * Spring Secuirty w/ JWT (JSON Web Token)
-* JUnit 5 (Testing Framework - Back)
+* Lombok
+* JUnit 5 and Mockito (Testing Framework - Back)
 * Angular2+ (Web Framework)
 * Jasmine / Karma (Testing Framework - Front)
 * Microsoft Visual Studio Code (Source Code Editor)
 * Postman (API Platform)
 
-## Project Requirements
+## Sprint 1 Requirements 
 1. As a User, I should be able to register a new account.
 2. As a User, I should be able to log into the application.
 3. As a User, I should be able to log out of the application.
@@ -49,8 +55,11 @@ The Revtech E-Commerce Application is an Angular Single Page Application (SPA) t
 8. As a User, I should be able to select an amount of an item to add to my cart as I am adding an item.
 9. As a User, I should be able to checkout with the items in my cart, purchasing them and removing them from the inventory.
 
-## Features
-List of features ready and TODOs for future development
+## Sprint 2 Requirements (Remember to chronicalize new changes correctly)
+1. As a User, I should be able to change the color scheme from the normal mode to a dark mode option.
+
+## Legacy Features
+List of previously implemented features
 * Ability to register as a customer
 * Ability to login as an customer or administrator
 * Ability to view appropriate interfaces upon login dependent upon level of access (admin or customer)
@@ -69,16 +78,23 @@ List of features ready and TODOs for future development
 * Ability to add and view customer reviews as a user
 * Ability to view orders history as a user
 
-To-do list:
-* Ability to update account information as a user
+## New Features (Remember to add new features)
+* Ability to switch background color from original theme (light) to dark theme by using Angular material
 * Ability to add items and checkout instantly (buy now) as a user
-* Ability to contact customer support (live chat)
 
-## Getting Started
+To-do list: (Remeber to Edit)
+* Ability to update account information as a user
+* Ability to contact customer support (live chat)
+* Ability to submit payment information as a user
+* Ability to enroll in a payment plan option as a user
+* Ability to display payment information in user details
+
+## Getting Started 
 Please refer to `STARTUP.md` file
 
-# Application Screenshots
+# Application Screenshots (Revise Screenshots)
 ![Store](https://i.postimg.cc/3R4p6GPB/Screen-Shot-2022-01-14-at-12-25-43-PM.png)
+![Store_with_Dark_Mode](https://i.postimg.cc/9f8KRYdR/dark-mode-store-page.png)
 ![Login / Register / Profile](https://i.postimg.cc/sgMh172R/Screen-Shot-2022-01-14-at-12-40-20-PM.png)
 ![Product Details / Review](https://i.postimg.cc/wMbDbVB0/Screen-Shot-2022-01-14-at-12-51-19-PM.png)
 ![Cart / Checkout / Confirmation / Orders History](https://i.postimg.cc/NGPTtdgx/Screen-Shot-2022-01-14-at-12-54-49-PM.png)
@@ -86,14 +102,14 @@ Please refer to `STARTUP.md` file
 ![Manage Store Forms](https://i.postimg.cc/1XJZxgxW/Screen-Shot-2022-01-14-at-1-04-27-PM.png)
 
 
-# Entity Relationship Diagram
+# Entity Relationship Diagram (New image diagram, decide to remotely host, or from local file. Diagram created by Tyler in email)
 ![ERD Image](https://i.postimg.cc/q75nz3yn/image.png)
 
-# File Structure
+# File Structure (Add Revised Structure)
 Within the download you'll find the following directories and files:
 
 ```
-Rev-Tech • E-Commerce
+Rev-Tech • E-Commerce (Update here)
 
 ├── README.md
 ├── angular.json
@@ -329,22 +345,28 @@ Project-3-Back-End • E-Commerce
 
 Team Structure
 ----
-![Team Structure Image](https://i.postimg.cc/fL0gMJGz/Screen-Shot-2022-01-14-at-12-03-42-PM.png)
 
 Contributors
 -----
 Scrum Master: 
-* Michelle Ng - Scrum Master / Technical Lead
+* Rebecca Lopez - Scrum Master / Technical Lead
 
 Team Leads: 
-* Rowel Selidio - Technical Lead (User Development Team)
-* James Lemaire - Technical Lead (Product Development Team)
-* Aimen Altaiyeb - Technical Lead (Transaction Development Team)
+* Tyler Boston - Technical Lead (Front-end Development/Email Notifications Team)
+* Suzanna Mei - Technical Lead (Back-end Development/Wish List Team)
 
 Team Members: 
-* Derrice Wright (User Development Team)
-* Tulika Ghosh (User Development Team)
-* Anthony Johnson (Product Development Team)
-* Austin Noel (Product Development Team)
-* Tareeq Hamilton (Transaction Development Team)
-* Sameh Botros (Transaction Development Team)
+* Mario Sanchez, Jr. (Testing Team)
+* Joshua Cookhorne (Testing Team)
+* Jordan Cooke (Security Team)
+* Benjamin Barnhill (DevOps Team)
+* Rana Ismael (Reset Password Team)
+* Leana Kazi (Reset Password Team)
+* Chunkit Yip (Dark Mode Team)
+* Samia Jahan (Buy Now Team)
+* Christopher Phillips (Buy Now Team)
+* Dimitri Luck (Wish List Team)
+* Ian Banson (Bundle Deals Team)
+* Davaras Bronson (Bundle Deals Team)
+* Hailemichael Hagos (Bundle Deals Team)
+* Travis Jackson (Email Notifications Team)
