@@ -3,23 +3,28 @@
 
 Project 3 - E-Commerce Store (Team Project)
 
-## Table of Contents
+## Table of Contents (Edit to include new contents)
 
-* [Project Description](#project-description)
+* [Project Sprint 1 Description](#project-sprint-1-description)
+* [Project Sprint 2 Description](#project-sprint-2-description)
 * [Technologies Used](#technologies-used)
-* [Project Requirements](#sprint-1-requirements)
-* [Features](#legacy-features)
+* [Sprint 1 Requirements](#sprint-1-requirements)
+* [Sprint 2 Requirements](#sprint-2-requirements)
+* [Legacy Features](#legacy-features)
+* [New Features](#new-features)
 * [Getting Started](#getting-started)
 * [Application Screenshots](#application-screenshots)
 * [Entity Relationship Diagram](#entity-relationship-diagram)
 * [File Structure](#file-structure)
-* [Team Structure](#team-structure)
 * [Contributors](#contributors)
 
-## Project Description (Edit to add new functionality)
+## Project Sprint 1 Description
 The Revtech E-Commerce Application is an Angular Single Page Application (SPA) that will allow users to sign up and login as a customer, browse all available products, view an individual product, and add products to their carts for purchase. Any user can browse the database of products, however, in order to purchase one you must be logged into an account. A new account can be created using the sign-up button. After an account is created the user will be able to login and purchase the products(s) of their choice. With our products route, the user is able to view all of the products we have in our database on a single page. When the user clicks on a product that they are interested in, it will redirect them to that product’s specific page to see additional details. Here, the user will be able to see the title, cost, discount and description of the product. This page will also include a button that will add the product to their cart if they would like to purchase it. The cart is the user’s final destination and where they will be able to see the products they wish to purchase, review the total costs of selected products, and also be able to check the products out to complete their purchase.
 
-## Technologies Used (Review for any new technologies)
+## Project Sprint 2 Description
+In addition to the Sprint 1 functionality, mulitple functionalities were chosen to complement the existing Revtech application. Any user has the ability to reset their password. A user also has the ability to change the brightness of the application from the normal mode to a dark mode. Users are able to add one, or multiple items and checkout instantly. A new cart was created, so when a user chooses an item, it generates a new transaction and is saved to the purchase history. As well, one or multiple items are able to be placed on a wish list for future purchase. An administrator can create bundles from various products, along with applying a discount and name for the bundle. The administrator can also view a separate bundle table to see previous and newly created bundles to update their stock. On the user end, customers can view a newly created bundle tab, which when clicked, brings them to the page for bundled products that are discounted for an incentive to purchase them.  The user can then proceed to check-out the bundle for purchase. Users will receive an email notification when an item on their wish list is put on discount. Also, any bundle deal created with a user’s wish list item as part of the bundle, will trigger an email notification, because the item will be discounted as part of the bundle. When multiple wish list items are part of a bundled deal, only one email will be sent to the user.
+
+## Technologies Used 
 * Java (Programming Language) - version 11.0.12
 * TypeScript (Programming Language)
 * HTML (HyperText Markup Language)
@@ -55,8 +60,13 @@ The Revtech E-Commerce Application is an Angular Single Page Application (SPA) t
 8. As a User, I should be able to select an amount of an item to add to my cart as I am adding an item.
 9. As a User, I should be able to checkout with the items in my cart, purchasing them and removing them from the inventory.
 
-## Sprint 2 Requirements (Remember to chronicalize new changes correctly)
-1. As a User, I should be able to change the color scheme from the normal mode to a dark mode option.
+## Sprint 2 Requirements 
+1. As a User, I should be able to reset my password.
+2. As a User, I should be able to change the color scheme from the normal mode to a dark mode option.
+3. As a User, I should be able to add item and checkout instantly.
+4. As a User, I should be able to save items to a wish list to buy later.
+5. As an Admin, I should be able to bundle certain items into a bulk deal with extra discount incentives.
+6. As a User, I should receive email notifications when an item in my wish list is put on discount.
 
 ## Legacy Features
 List of previously implemented features
@@ -78,11 +88,16 @@ List of previously implemented features
 * Ability to add and view customer reviews as a user
 * Ability to view orders history as a user
 
-## New Features (Remember to add new features)
+## New Features 
+* Ability to reset password as a user
 * Ability to switch background color from original theme (light) to dark theme by using Angular material
 * Ability to add items and checkout instantly (buy now) as a user
+* Ability to add items to a wish list for future purchase
+* Ability to add items to bundled deals for the purpose of discounting cumulative items as an administrator
+* Ability to send automated emails when any item on a user's wish list is discounted
+* Ability to send automated emails when any item, or items on a user's wish list is part of a bundled deal
 
-To-do list: (Remeber to Edit)
+To-do list: 
 * Ability to update account information as a user
 * Ability to contact customer support (live chat)
 * Ability to submit payment information as a user
@@ -92,20 +107,24 @@ To-do list: (Remeber to Edit)
 ## Getting Started 
 Please refer to `STARTUP.md` file
 
-# Application Screenshots (Revise Screenshots)
-![Store](https://i.postimg.cc/3R4p6GPB/Screen-Shot-2022-01-14-at-12-25-43-PM.png)
+# Application Screenshots 
+![Store](https://i.postimg.cc/fyngQ8cX/store.png)
 ![Store_with_Dark_Mode](https://i.postimg.cc/9f8KRYdR/dark-mode-store-page.png)
-![Login / Register / Profile](https://i.postimg.cc/sgMh172R/Screen-Shot-2022-01-14-at-12-40-20-PM.png)
-![Product Details / Review](https://i.postimg.cc/wMbDbVB0/Screen-Shot-2022-01-14-at-12-51-19-PM.png)
+![Login / Register / Profile](https://i.postimg.cc/260vYyND/merge-user.png)
+![Forget_Password/Reset_Password](https://i.postimg.cc/QxqYvkH9/merge-from-ofoct.jpg)
+![Product Details](https://i.postimg.cc/zvFpZ8XZ/item-page.png)
+![Product Review](https://i.postimg.cc/15yJ0nJ9/review.png)
 ![Cart / Checkout / Confirmation / Orders History](https://i.postimg.cc/NGPTtdgx/Screen-Shot-2022-01-14-at-12-54-49-PM.png)
+![Wistlist](https://i.postimg.cc/jdvvMxFy/wish-list.png)
 ![Manage Store](https://i.postimg.cc/rst534tT/Screen-Shot-2022-01-14-at-1-09-55-PM.png)
 ![Manage Store Forms](https://i.postimg.cc/1XJZxgxW/Screen-Shot-2022-01-14-at-1-04-27-PM.png)
+![Email_Notifications](https://i.postimg.cc/FsxHYqnP/email-discount.png)
 
 
-# Entity Relationship Diagram (New image diagram, decide to remotely host, or from local file. Diagram created by Tyler in email)
-![ERD Image](https://i.postimg.cc/q75nz3yn/image.png)
+# Entity Relationship Diagram
+![shopmeSchemaDiagram](https://user-images.githubusercontent.com/98404483/163305499-cbf3ff20-e36b-487c-9a7e-ff48eb812b19.png)
 
-# File Structure (Add Revised Structure)
+# File Structure (Talk with the team about this)
 Within the download you'll find the following directories and files:
 
 ```
@@ -343,9 +362,6 @@ Project-3-Back-End • E-Commerce
 └── README.md
 ```
 
-Team Structure
-----
-
 Contributors
 -----
 Scrum Master: 
@@ -358,11 +374,11 @@ Team Leads:
 Team Members: 
 * Mario Sanchez, Jr. (Testing Team)
 * Joshua Cookhorne (Testing Team)
-* Jordan Cooke (Security Team)
-* Benjamin Barnhill (DevOps Team)
+* Jordan Cooke (Security Personnel)
+* Benjamin Barnhill (DevOps Personnel)
 * Rana Ismael (Reset Password Team)
 * Leana Kazi (Reset Password Team)
-* Chunkit Yip (Dark Mode Team)
+* Chunkit Yip (Dark Mode Personnel)
 * Samia Jahan (Buy Now Team)
 * Christopher Phillips (Buy Now Team)
 * Dimitri Luck (Wish List Team)
